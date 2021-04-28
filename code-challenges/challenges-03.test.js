@@ -8,10 +8,17 @@ Write a function called addTwo that takes in an array and adds two to every valu
 
 const addTwo = (arr) => {
   // Solution code here...
-  return(arr.map(data=>{
-    data=data+2;
-    return data;
-  }));
+  // return(arr.map(data=>{
+  //   data=data+2;
+  //   return data;
+  // }));
+  /************ Edit/Update *********** */
+  //solve the challenge using for loop
+  let newArr=[];
+  for (let i = 0; i < arr.length; i++) {
+    newArr.push(arr[i]+=2);
+  }
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
